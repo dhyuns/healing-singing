@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>healingsinging</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 13h24c0 8-5 13-12 13S4 21 4 13z' fill='%239c7442'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="/assets/index-kOA3fSIG.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Ch4NgHCT.css">
+    <script type="module" crossorigin src="/assets/index-C46zkxZf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-hjp4mM6f.css">
   </head>
   <body>
     <main id="stage"></main>
@@ -25,15 +25,23 @@
 
     <footer class="bottom">
       <p class="hint">드래그해서 둘러보세요</p>
-      <div class="volumes">
-        <label class="volume">
-          <span>소리</span>
-          <input class="master-volume" type="range" min="0" max="1" step="0.01" aria-label="전체 소리 크기" />
-        </label>
-        <label class="volume">
-          <span>자연</span>
-          <input class="nature-volume" type="range" min="0" max="1" step="0.01" aria-label="폭포 등 자연 소리 크기" />
-        </label>
+      <div class="sound">
+        <div class="volumes" id="volume-panel">
+          <label class="volume">
+            <span>소리</span>
+            <input class="master-volume" type="range" min="0" max="1" step="0.01" aria-label="전체 소리 크기" />
+          </label>
+          <label class="volume">
+            <span>자연</span>
+            <input class="nature-volume" type="range" min="0" max="1" step="0.01" aria-label="폭포 등 자연 소리 크기" />
+          </label>
+        </div>
+        <button type="button" class="sound-toggle" aria-label="소리 조절" aria-expanded="false" aria-controls="volume-panel">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" />
+            <path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
       </div>
     </footer>
 
