@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>healingsinging</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 13h24c0 8-5 13-12 13S4 21 4 13z' fill='%239c7442'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="/assets/index-BW1dkJF2.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-hjp4mM6f.css">
+    <script type="module" crossorigin src="/assets/index-CjBYdqIn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DcXBGWOm.css">
   </head>
   <body>
     <main id="stage"></main>
@@ -22,6 +22,21 @@
         <nav class="bowls" aria-label="싱잉볼 고르기" hidden></nav>
       </div>
     </header>
+
+    <div class="zone-controls">
+      <button type="button" class="zone-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="zone-menu">☰</button>
+      <nav class="zone-menu" id="zone-menu" aria-label="공간 메뉴" hidden>
+        <span>지금 머무는 곳</span>
+        <button type="button" class="zone-current" aria-haspopup="dialog">샬라존01 ▾</button>
+      </nav>
+    </div>
+    <p class="listener-count" aria-live="polite">잠시 쉬어갈 곳에 들어가 보세요</p>
+    <dialog class="zone-dialog" aria-labelledby="zone-title">
+      <div class="zone-heading"><h2 id="zone-title">머무를 곳</h2><button type="button" class="zone-close" aria-label="닫기">×</button></div>
+      <p class="zone-notice" role="status">어느 존에서도 같은 공간을 이용할 수 있어요.</p>
+      <div class="zone-toolbar"><span>함께 머무는 사람들</span><button type="button" class="zone-refresh">인원 새로고침</button></div>
+      <div class="zone-list"></div>
+    </dialog>
 
     <footer class="bottom">
       <p class="hint">드래그해서 둘러보세요</p>
