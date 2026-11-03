@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>힐링싱잉</title>
     <meta name="description" content="힐링하세요. 잠시 누워, 싱잉볼의 울림에 마음을 쉬어가세요." />
     <meta name="theme-color" content="#181b29" />
@@ -17,15 +17,15 @@
     <meta name="twitter:title" content="힐링싱잉" />
     <meta name="twitter:description" content="힐링하세요. 잠시 누워, 싱잉볼의 울림에 마음을 쉬어가세요." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 13h24c0 8-5 13-12 13S4 21 4 13z' fill='%239c7442'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="/assets/index-QRc-bjoH.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-jL1QX_Wl.css">
+    <script type="module" crossorigin src="/assets/index-d6gIYwgP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-gjFnDZw6.css">
   </head>
   <body>
     <main id="stage"></main>
 
     <aside class="toolbar" aria-label="화면 도구">
       <div class="control-group action-control">
-        <button type="button" class="icon-button action-toggle" data-popover="action-panel" aria-label="행동 메뉴 열기" aria-expanded="false" aria-controls="action-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13V6a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v6c0 4-2.5 7-6 7h-1c-2 0-3.5-1-5-3l-4-5a1.5 1.5 0 0 1 2-2z"/></svg></button>
+        <button type="button" class="icon-button action-toggle" data-popover="action-panel" aria-label="감정표현과 행동 메뉴 열기" aria-expanded="false" aria-controls="action-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14a4.5 4.5 0 0 0 8 0M8.5 8.5v1m7-1v1"/></svg></button>
         <section class="popover actions" id="action-panel" aria-label="행동 메뉴" hidden>
           <p class="popover-title">어떻게 쉬어갈까요?</p>
           <button type="button" data-reaction="wave" data-close-popover aria-label="다른 방문객에게 손 인사"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13V6a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v6c0 4-2.5 7-6 7h-1c-2 0-3.5-1-5-3l-4-5a1.5 1.5 0 0 1 2-2z"/></svg><span>손 인사</span></button>
@@ -36,7 +36,7 @@
         </section>
       </div>
       <div class="control-group zone-controls">
-        <button type="button" class="icon-button zone-toggle" data-popover="zone-menu" aria-label="공간 메뉴 열기" aria-expanded="false" aria-controls="zone-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/></svg></button>
+        <button type="button" class="icon-button zone-toggle" data-popover="zone-menu" aria-label="공간 메뉴 열기" aria-expanded="false" aria-controls="zone-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/></svg></button>
         <nav class="popover zone-menu" id="zone-menu" aria-label="공간 메뉴" hidden>
           <span class="popover-title">지금 머무는 곳</span>
           <button type="button" class="zone-current" data-close-popover aria-haspopup="dialog">샬라존01 ▾</button>
@@ -61,6 +61,11 @@
     </dialog>
 
     <footer class="bottom">
+      <nav class="quick-actions" aria-label="빠른 행동">
+        <button type="button" class="quick-lie" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V8m0 7h18v6M3 18h18M3 21v-3m5-3v-5h9a4 4 0 0 1 4 4v1"/><circle cx="6" cy="11" r="2"/></svg><span>눕기</span></button>
+        <button type="button" class="quick-sit" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M12 8v6m-4-4 4 2 4-2m-4 4-5 3 5 3 5-3-5-3M5 21h14"/></svg><span>앉기</span></button>
+        <button type="button" data-reaction="wave"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13V6a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v6c0 4-2.5 7-6 7h-1c-2 0-3.5-1-5-3l-4-5a1.5 1.5 0 0 1 2-2z"/></svg><span>인사</span></button>
+      </nav>
       <p class="hint">드래그해서 둘러보세요</p>
     </footer>
 
